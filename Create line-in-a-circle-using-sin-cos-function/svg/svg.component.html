@@ -1,0 +1,86 @@
+<h3>{{title}}</h3>
+
+<div class="svg-container">
+    <svg [attr.width]="svg_dim.width" [attr.height]="svg_dim.height">
+        <line [attr.x1]="x_axis.x" [attr.y1]="x_axis.y" 
+              [attr.x2]="x_axis.x_" [attr.y2]="x_axis.y_" 
+              style="stroke: yellow; fill: none; stroke-width: 1"
+        />   
+        
+        <line [attr.x1]="y_axis.x" [attr.y1]="y_axis.y" 
+            [attr.x2]="y_axis.x_" [attr.y2]="y_axis.y_" 
+            style="stroke: yellow; fill: none; stroke-width: 1"
+        />
+        
+        
+
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(0, radius)" [attr.y2]="getY2(0, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(22.5, radius)" [attr.y2]="getY2(22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(45, radius)" [attr.y2]="getY2(45, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(45 + 22.5, radius)" [attr.y2]="getY2(45 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(90, radius)" [attr.y2]="getY2(90, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(90 + 22.5, radius)" [attr.y2]="getY2(90 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(90 + 45, radius)" [attr.y2]="getY2(90 + 45, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(90 + 45 + 22.5, radius)" [attr.y2]="getY2(90 + 45 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(180, radius)" [attr.y2]="getY2(180, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(180 + 22.5, radius)" [attr.y2]="getY2(180 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(180 + 45, radius)" [attr.y2]="getY2(180 + 45, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(180 + 45 + 22.5, radius)" [attr.y2]="getY2(180 + 45 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(180 + 90, radius)" [attr.y2]="getY2(180 + 90, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(270 + 22.5, radius)" [attr.y2]="getY2(270 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(270 + 45, radius)" [attr.y2]="getY2(270 + 45, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+        <line [attr.x1]="x_axis.x + radius" [attr.y1]="x_axis.y" 
+            [attr.x2]="getX2(270 + 45 + 22.5, radius)" [attr.y2]="getY2(270 + 45 + 22.5, radius)" 
+            style="stroke:white; fill: none; stroke-width: 1"
+        />
+    </svg>
+</div>

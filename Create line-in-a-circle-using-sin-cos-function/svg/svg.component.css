@@ -1,0 +1,9 @@
+.svg-container {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+svg {
+    border: 1px solid yellow;
+}
